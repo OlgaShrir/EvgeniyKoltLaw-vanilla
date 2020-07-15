@@ -1,0 +1,103 @@
+$color1: #332933;  // background color header+footer
+$color2: #ffffff;  // text color header+footer
+$color3: #e9e9e9;  // border
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1px;
+}
+
+body{
+    font-size: 16rem;
+    line-height: 1.6;
+    // background-color: beige;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50rem;
+}
+
+nav, .citation-container, .main, .about-container, .fields-container, .contacts{
+    width: 80vw;
+    margin: auto;
+}
+
+header{
+    background-color: $color1;
+    padding: 30rem 0;
+}
+
+nav{
+    color: $color2;
+}
+
+li{
+    padding-right: 30px;
+}
+
+.nav-item, .nav-contacts{
+    text-decoration: none;
+    color: $color2;
+    // font-size: 22px;
+    // letter-spacing: 2px;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 8rem;
+}
+
+.citation-container{
+    width: fit-content;
+    // margin: 80rem 0 80rem 0;     // how to move the div right???
+    margin: 80rem auto;
+    border: 1px solid $color3;
+    border-radius: 10px;
+    padding: 30rem;
+    direction: rtl;
+}
+
+.citation{
+  // font-size: 18px;
+    font-style: italic;
+}
+
+.main, .about, .fields, .disclaimer{
+    margin-bottom: 80rem; 
+}
+
+img{
+    width: 300px;
+}
+
+.about-text{
+    margin-left: 20px;
+}
+
+.fields{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.disclaimer{
+    margin: 30rem 0;
+    font-size: 0.9em;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+
+footer{
+    background-color: $color1;
+    color: white;
+    // page-break-after: 100px;
+}
+
+.contacts{
+    padding: 30rem 0;
+}

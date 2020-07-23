@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body, p, h1, h2, h3, h4, h5, h6 {
@@ -13,13 +14,15 @@ html {
 }
 
 body {
-  font-size: 16rem;
+  font-size: 20rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 50rem;
+  font-family: 'Poiret One', cursive;
 }
 
 nav, .citation-container, .main, .about-container, .fields-container, .contacts {
@@ -41,17 +44,23 @@ ul {
 }
 
 li {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
-.nav-item, .nav-contacts {
+.nav-item, .nav-contacts-name, .nav-contacts-number, .nav-contacts-fontawesome, .nav-number {
   text-decoration: none;
   color: #ffffff;
+  letter-spacing: 1rem;
+  font-family: 'Poiret One', cursive;
 }
 
 .nav-item:hover {
   border-bottom: 2px solid red;
   padding-bottom: 8rem;
+}
+
+.logo {
+  font-family: 'Poiret One', cursive;
 }
 
 .citation-container {
@@ -73,8 +82,27 @@ li {
   margin-bottom: 80rem;
 }
 
+.main-services {
+  color: black;
+}
+
 .about-text {
   margin-left: 30px;
+}
+
+h2 {
+  margin-bottom: 30rem;
+}
+
+.field {
+  font-family: 'Poiret One', cursive;
+}
+
+.fields {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
 }
 
 .disclaimer {
@@ -94,7 +122,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 990px) {
   ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -110,6 +138,14 @@ footer {
   .img {
     margin: auto;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fields {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

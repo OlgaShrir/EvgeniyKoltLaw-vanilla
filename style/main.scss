@@ -5,6 +5,7 @@ $color3: #e9e9e9;  // border
 
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body, p, h1, h2, h3, h4, h5, h6 {
@@ -17,14 +18,15 @@ html{
 }
 
 body{
-    font-size: 16rem;
+    font-size: 20rem;
     line-height: 1.6;
-    // background-color: beige;
+    font-weight: 500;
 }
 
 h1{
     text-align: center;
     margin-bottom: 50rem;
+    font-family: 'Poiret One', cursive;
 }
 
 nav, .citation-container, .main, .about-container, .fields-container, .contacts{
@@ -33,8 +35,7 @@ nav, .citation-container, .main, .about-container, .fields-container, .contacts{
 }
 
 header{
-    background-color: #332933;
-    // background-color: $color1;
+    background-color: $color1;
     padding: 30rem 0;
 }
 
@@ -48,19 +49,24 @@ ul {
 }
 
 li{
-    padding-right: 30px;
+    margin-right: 30px;
 }
 
-.nav-item, .nav-contacts{
+.nav-item, .nav-contacts-name, .nav-contacts-number, .nav-contacts-fontawesome, .nav-number{
     text-decoration: none;
     color: $color2;
-    // font-size: 22px;
-    // letter-spacing: 2px;
+    // font-size: 18rem;
+    letter-spacing: 1rem;
+    font-family: 'Poiret One', cursive;
 }
 
 .nav-item:hover{
     border-bottom: 2px solid red;
     padding-bottom: 8rem;
+}
+
+.logo{
+    font-family: 'Poiret One', cursive;
 }
 
 .citation-container{
@@ -74,7 +80,6 @@ li{
 }
 
 .citation{
-  // font-size: 18px;
     font-style: italic;
 }
 
@@ -82,24 +87,27 @@ li{
     margin-bottom: 80rem; 
 }
 
-.about{
-    // grid-template-columns: 300px 1fr;
-    // grid-gap: 20px;
-}
-
-img{
-    // width: 300px;
+.main-services{
+    color: black;
 }
 
 .about-text{
     margin-left: 30px;
-    // width: inherit;
+}
+
+h2{
+    margin-bottom: 30rem;
+    
+}
+
+.field{
+    font-family: 'Poiret One', cursive;
 }
 
 .fields{
-    // grid-template-columns: 1fr 1fr;
-    // grid-gap: 20px;
-    // width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
 }
 
 .disclaimer{
@@ -124,10 +132,7 @@ footer{
 
 /* Media Queries */
 
-@media screen and (max-width : 700px){
-    header{
-        // background-color: blue;
-    }
+@media screen and (max-width : 990px){
     ul{
         flex-direction: column;
     }
@@ -137,5 +142,12 @@ footer{
     .img{
         margin: auto;
         margin-bottom: 30px;;
+    }
+}
+
+@media screen and (max-width : 700px){
+    .fields{
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 }

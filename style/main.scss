@@ -18,7 +18,7 @@ html{
 }
 
 body{
-    font-size: 20rem;
+    font-size: 19rem;
     line-height: 1.6;
     font-weight: 500;
 }
@@ -55,18 +55,13 @@ li{
 .nav-item, .nav-contacts-name, .nav-contacts-number, .nav-contacts-fontawesome, .nav-number{
     text-decoration: none;
     color: $color2;
-    // font-size: 18rem;
     letter-spacing: 1rem;
     font-family: 'Poiret One', cursive;
 }
 
-.nav-item:hover{
-    border-bottom: 2px solid red;
+.nav-item:hover, .nav-number:hover{
+    border-bottom: 1rem solid red;
     padding-bottom: 8rem;
-}
-
-.logo{
-    font-family: 'Poiret One', cursive;
 }
 
 .citation-container{
@@ -132,7 +127,7 @@ footer{
 
 /* Media Queries */
 
-@media screen and (max-width : 990px){
+@media screen and (max-width : 960px){
     ul{
         flex-direction: column;
     }

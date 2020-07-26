@@ -43,10 +43,6 @@ nav{
     color: $color2;
 }
 
-.nav-contacts{
-    margin-bottom: 10rem;
-}
-
 ul {
     list-style: none;
     padding: 0rem;
@@ -56,7 +52,7 @@ li{
     margin-right: 30px;
 }
 
-.nav-item, .nav-contacts-name, .nav-contacts-number, .nav-contacts-fontawesome, .nav-number{
+.nav-item, .nav-contacts-name, .nav-contacts-number, .nav-number{
     text-decoration: none;
     color: $color2;
     letter-spacing: 1rem;
